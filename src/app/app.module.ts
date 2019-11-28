@@ -5,16 +5,34 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { MainContentComponent } from './content/main-content/main-content.component';
+import { ThongtincanhanComponent } from './content/thongtincanhan/thongtincanhan.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+
+
+
 
 @NgModule({
    declarations: [
       AppComponent,
       LoginComponent,
-      AboutUsComponent
+      AboutUsComponent,
+      MainContentComponent,
+      ThongtincanhanComponent,
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      BrowserAnimationsModule,
+      MatCardModule,
+      MatFormFieldModule,
+      MatIconModule,
+      FormsModule,
+
    ],
    providers: [],
    bootstrap: [
