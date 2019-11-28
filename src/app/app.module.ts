@@ -7,11 +7,12 @@ import { LoginComponent } from './login/login.component';
 import { MainContentComponent } from './content/main-content/main-content.component';
 import { ThongtincanhanComponent } from './content/thongtincanhan/thongtincanhan.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
-
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutComponent } from './layout/layout.component';
 
 
 
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
       LoginComponent,
       MainContentComponent,
       ThongtincanhanComponent,
+      LayoutComponent
    ],
    imports: [
       BrowserModule,
@@ -30,7 +32,7 @@ import { FormsModule } from '@angular/forms';
       MatFormFieldModule,
       MatIconModule,
       FormsModule,
-
+      MatButtonModule
    ],
    providers: [],
    bootstrap: [
