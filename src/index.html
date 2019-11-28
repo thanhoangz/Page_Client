@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
 
   <link href="assets/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
@@ -57,22 +58,8 @@
     });
   </script>
   <!-- /script-for-menu -->
-  <!-- FlexSlider -->
-  <script defer src="assets/js/jquery.flexslider.js"></script>
-  <script type="text/javascript">
-    $(function () {
-    });
-    $(window).load(function () {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function (slider) {
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
 
-  <!-- FlexSlider -->
+  
 
   <script src="assets/js/responsiveslides.min.js"></script>
   <script>
@@ -86,8 +73,27 @@
       });
     });
   </script>
+
+  
+  <script>
+      $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+          type: 'inline',
+          fixedContentPos: false,
+          fixedBgPos: true,
+          overflowY: 'auto',
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in'
+        });
+
+      });
+    </script>
   <script type="text/javascript" src="assets/js/modernizr.custom.53451.js"></script>
   <script src="assets/js/jquery.magnific-popup.js" type="text/javascript"></script>
+
 </body>
 
 </html>

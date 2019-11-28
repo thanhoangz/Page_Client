@@ -63,7 +63,7 @@ span.books {
 }
 .logo {
     float: left;
-    width: 40%;
+    width: 30%;
 }
 .logo h1{
     font-size: 2.7em;
@@ -74,7 +74,7 @@ span.books {
 }
 .top-nav {
     float: right;
-    width: 60%;
+    width: 70%;
     text-align: right;
 }
 span.menu {
@@ -362,7 +362,7 @@ span.glyphicon.glyphicon-eye-open{
     font-size: 3em;
     color:#a2b040;
     margin-bottom: 0.2em;
-    font-family: 'Marvel', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
 }
 .we-do-main h4 {
     font-size: 1em;
@@ -1407,6 +1407,31 @@ h3.typo1 {
 .contact-address ul {
     padding: 0em;
     list-style: none;
+}
+span.glyphicon.glyphicon-calendar {
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 0.8em;
+    vertical-align: top;
+    background: #000;
+    border-radius: 44px;
+    width: 35px;
+    height: 35px;
+    line-height: 1.9em;
+    text-align: center;
+}
+
+span.glyphicon.glyphicon-star {
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 0.8em;
+    vertical-align: top;
+    background: #000;
+    border-radius: 44px;
+    width: 35px;
+    height: 35px;
+    line-height: 1.9em;
+    text-align: center;
 }
 span.glyphicon.glyphicon-map-marker {
     font-size: 1.2em;
