@@ -13,8 +13,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
-
-
+import { CourseComponent } from './course/course.component';
 
 
 @NgModule({
@@ -25,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
       MainContentComponent,
       ThongtincanhanComponent,
       ContactComponent,
+      CourseComponent,
    ],
    imports: [
       BrowserModule,
