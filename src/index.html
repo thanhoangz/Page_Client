@@ -6,7 +6,6 @@
   <title>ClientPLC</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <!-- Custom Theme files -->
@@ -23,6 +22,7 @@
   <link href='https://fonts.googleapis.com/css?family=Marvel:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
   <!--google fonts-->
+
   <script src="assets/js/jquery-1.11.0.min.js"></script>
   <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
 
@@ -68,6 +68,8 @@
   <script src="../src/assets/infor/js/custom.js"></script>
   <link href="../src/assets/infor/css/custom.css" rel="stylesheet">
   <!--//Metis Menu -->
+  <link type="text/css" rel="stylesheet" href="assets/css/colorfulTab.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -172,6 +174,31 @@
 
   <!-- Bootstrap Core JavaScript -->
   <script src="../src/assets/infor/js/bootstrap.js"> </script>
+  <!--tab start here-->
+  <script type="text/javascript" src="assets/js/colorfulTab.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      $("#colorful").colorfulTab();
+
+      $("#colorful-elliptic").colorfulTab({
+        theme: "elliptic"
+      });
+
+      $("#colorful-flatline").colorfulTab({
+        theme: "flatline"
+      });
+
+      $("#colorful-background-image").colorfulTab({
+        theme: "flatline",
+        backgroundImage: "true",
+        overlayColor: "#002F68",
+        overlayOpacity: "0.8"
+      });
+
+    });
+  </script>
+  <!--tab start here-->
 </body>
 
 </html>

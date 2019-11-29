@@ -14,32 +14,34 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { InforManagerComponent } from './infor-manager/infor-manager.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      LoginComponent,
-      AboutUsComponent,
-      MainContentComponent,
-      ThongtincanhanComponent,
-      InforManagerComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      MatCardModule,
-      MatFormFieldModule,
-      MatIconModule,
-      FormsModule,
-      MatButtonModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    AboutUsComponent,
+    MainContentComponent,
+    ThongtincanhanComponent,
+    InforManagerComponent,
+    ContactComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatIconModule,
+    FormsModule,
+    MatButtonModule
+  ],
+  providers: [],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
