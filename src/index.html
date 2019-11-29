@@ -6,7 +6,6 @@
   <title>ClientPLC</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <!-- Custom Theme files -->
@@ -17,12 +16,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="keywords" content="Agility  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
   Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-  <script
-    type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
   <!--Google Fonts-->
   <link href='https://fonts.googleapis.com/css?family=Marvel:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
   <!--google fonts-->
+  
   <script src="assets/js/jquery-1.11.0.min.js"></script>
   <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
 
@@ -31,6 +30,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/css/colorfulTab.min.css">
 </head>
 
 <body>
@@ -96,6 +96,31 @@
   <script type="text/javascript" src="assets/js/modernizr.custom.53451.js"></script>
   <script src="assets/js/jquery.magnific-popup.js" type="text/javascript"></script>
 
+  <!--tab start here-->
+<script type="text/javascript" src="assets/js/colorfulTab.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#colorful").colorfulTab();
+
+        $("#colorful-elliptic").colorfulTab({
+            theme: "elliptic"
+        });
+
+        $("#colorful-flatline").colorfulTab({
+            theme: "flatline"
+        });
+
+        $("#colorful-background-image").colorfulTab({
+            theme: "flatline",
+            backgroundImage: "true",
+            overlayColor: "#002F68",
+            overlayOpacity: "0.8"
+        });
+
+    });
+</script>
+<!--tab start here-->
 </body>
 
 </html>

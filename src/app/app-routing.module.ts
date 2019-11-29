@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MainContentComponent } from './content/main-content/main-content.component';
 import {  ThongtincanhanComponent} from './content/thongtincanhan/thongtincanhan.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -19,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'main',
     pathMatch: 'full'
   },
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'info',
     component: ThongtincanhanComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
 
 ];

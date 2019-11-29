@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
       AboutUsComponent,
       MainContentComponent,
       ThongtincanhanComponent,
+      ContactComponent,
    ],
    imports: [
       BrowserModule,
