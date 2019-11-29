@@ -6,6 +6,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -17,6 +20,9 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatIconModule,
     FormsModule,
+    MatButtonModule,
+    MatInputModule,
+    ToastrModule,
   ],
   declarations: [
     ThongtincanhanComponent,

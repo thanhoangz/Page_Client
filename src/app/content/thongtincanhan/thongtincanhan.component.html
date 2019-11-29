@@ -1,13 +1,13 @@
 <section class="content" style="margin-top: 1%">
     <div class="container-fluid">
-        <mat-card style="background-color: aqua;">
+        <mat-card >
             <mat-card-header class="card-container">
                 <mat-card-title>Thông tin cá nhân</mat-card-title>
             </mat-card-header>
         </mat-card>
-        <mat-card style="margin-top: 0.5%; background-color: aqua;">
+        <mat-card style="margin-top: 0.5%; ">
             <div class="row">
-                <div class="col-md-12" style="background-color: blueviolet; padding-top: 20px; padding-bottom: 20px;">
+                <div class="col-md-12" style=" padding-top: 20px; padding-bottom: 20px;">
                     <div class="row">
                         <div class="col-md-1" id="row_row"></div>
                         <div class="col-md-3" id="row_row">
@@ -15,7 +15,7 @@
                         </div>
                         <div class="col-md-7" id="row_row">
                             <span [class]="'badge badge-primary'">
-                                63615
+                                {{learnerCard}}
                             </span>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-md-7" id="row_row">
                             <span [class]="'badge badge-primary'">
-                                Nguyễn Viết Phương
+                                {{infoLearn.firstName + " " + infoLearn.lastName}}
                             </span>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="col-md-7" id="row_row">
                             <span [class]="'badge badge-primary'">
-                                10-10-1997
+                                {{infoLearn.birthday | date:'dd-MM-yyyy'}}
                             </span>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-md-7" id="row_row">
                             <span [class]="'badge badge-primary'">
-                                Nam
+                                {{(infoLearn.sex == true)?'Nam':'Nữ'}}
                             </span>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="col-md-7" id="row_row">
                             <span [class]="'badge badge-primary'">
-                                0368836763
+                                {{infoLearn.phone }}
                             </span>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="col-md-12"
-                    style="background-color: brown; height: 100px; padding-top: 20px; padding-bottom: 20px;">
+                    style="padding-top: 20px; padding-bottom: 20px;">
                     <label>Đổi mật khẩu</label>
                     <div class="row">
                         <div class="col-md-1"></div>
@@ -84,20 +84,20 @@
 
                             <mat-form-field>
                                 <mat-label>New Password</mat-label>
-                                <input type="password" matInput placeholder="New Password" >
+                                <input type="password" matInput placeholder="New Password" [(ngModel)]="newPassword">
 
                             </mat-form-field>
 
                             <mat-form-field>
                                 <mat-label>Confirm Password</mat-label>
-                                <input type="password" matInput placeholder="Confirm Password"
+                                <input type="password" matInput placeholder="Confirm Password" [(ngModel)]="confirmPassword"
                                     >
                             </mat-form-field>
 
 
 
                             <button class="addAndSearch" mat-raised-button color="primary" tabindex="-1"
-                                style="float: left;" >
+                                style="float: left;" (click)="DoiMatKhau()" >
                                 <mat-icon>vpn_key</mat-icon>
                                 Đổi mật khẩu
                             </button>

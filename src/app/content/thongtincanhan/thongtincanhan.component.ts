@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicesService } from '../../services.service';
+import { ThongBaoService } from '../../thongBao.service';
 
 @Component({
   selector: 'app-thongtincanhan',
@@ -7,10 +9,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThongtincanhanComponent implements OnInit {
 
-  public password;
-  constructor() { }
+  public learnerCard;
+  public oldPassword;
+  public newPassword;
+  public confirmPassword;
+
+  public infoLearn;
+  public user;
+  constructor(
+    private servicesService: ServicesService,
+    private thongBaoService: ThongBaoService,
+
+  ) { }
 
   ngOnInit() {
+    this.learnerCard = 'HV0000007';
+    this.getInfor();
   }
 
+  public getInfor() {
+    this.servicesService.getByCarrdId(this.learnerCard).subscribe(result => {
+      this.infoLearn = result;
+    });
+  }
+
+  public DoiMatKhau() {
+    this.user.password = this.newPassword;
+    // tslint:disable-next-line: triple-equals
+    if (this.newPassword == this.confirmPassword) {
+      this.servicesService.putUser(this.user).subscribe(result => {
+        this.thongBaoService.showNotification(1, 'Đổi mật khẩu', 'Thành công!');
+      }, error => {
+        this.thongBaoService.showNotification(3, 'Đổi mật khẩu', 'Không thành công');
+      });
+    } else {
+      this.thongBaoService.showNotification(2, 'Đổi mật khẩu', 'Mật khẩu không trùng khớp');
+    }
+  }
 }
