@@ -15,7 +15,11 @@ import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import { ToastrModule } from 'ngx-toastr';
-
+import { ThongTinDiemComponent } from './content/thong-tin-diem/thong-tin-diem.component';
+import { ThongTinQthtComponent } from './content/thong-tin-qtht/thong-tin-qtht.component';
+import { LichSuDongTienComponent } from './content/lich-su-dong-tien/lich-su-dong-tien.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -25,6 +29,9 @@ import { ToastrModule } from 'ngx-toastr';
       AboutUsComponent,
       MainContentComponent,
       ThongtincanhanComponent,
+      ThongTinDiemComponent,
+      ThongTinQthtComponent,
+      LichSuDongTienComponent,
    ],
    imports: [
       BrowserModule,
@@ -37,6 +44,8 @@ import { ToastrModule } from 'ngx-toastr';
       MatButtonModule,
       MatInputModule,
       ToastrModule,
+      MatTableModule,
+      MatExpansionModule,
    ],
    providers: [],
    bootstrap: [
