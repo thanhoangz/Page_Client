@@ -34,6 +34,7 @@ export class ContactComponent implements OnInit {
       phone: this.Phone,
       parentFullName: this.ParentFullName,
       parentPhone: this.ParentPhone,
+      note: this.Note,
     }).subscribe(result => {
     }, error => {
     });
