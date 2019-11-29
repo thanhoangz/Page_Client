@@ -13,7 +13,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { LayoutComponent } from './layout/layout.component';
+import { InforManagerComponent } from './infor-manager/infor-manager.component';
+
 
 
 
@@ -24,7 +25,7 @@ import { LayoutComponent } from './layout/layout.component';
       AboutUsComponent,
       MainContentComponent,
       ThongtincanhanComponent,
-      LayoutComponent
+      InforManagerComponent
    ],
    imports: [
       BrowserModule,
