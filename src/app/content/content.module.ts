@@ -30,6 +30,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ToastrModule,
     MatTableModule,
     MatExpansionModule,
+    MatButtonModule
   ],
   declarations: [
     ThongtincanhanComponent,
