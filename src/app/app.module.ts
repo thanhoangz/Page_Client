@@ -22,7 +22,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { InforManagerComponent } from './infor-manager/infor-manager.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { LayoutComponent } from './content/layout/layout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { ContactComponent } from './contact/contact.component';
     LichSuDongTienComponent,
     InforManagerComponent,
     ContactComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,7 @@ import { ContactComponent } from './contact/contact.component';
     ToastrModule,
     MatTableModule,
     MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [

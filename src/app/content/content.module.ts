@@ -5,15 +5,17 @@ import { ThongtincanhanComponent } from './thongtincanhan/thongtincanhan.compone
 import { ThongTinDiemComponent } from './thong-tin-diem/thong-tin-diem.component';
 import { ThongTinQthtComponent } from './thong-tin-qtht/thong-tin-qtht.component';
 import { LichSuDongTienComponent } from './lich-su-dong-tien/lich-su-dong-tien.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 import { ToastrModule } from 'ngx-toastr';
-import {MatTableModule} from '@angular/material/table';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { HttpClientModule } from '@angular/common/http';
+import { LayoutComponent } from './layout/layout.component';
 
 
 
@@ -30,7 +32,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ToastrModule,
     MatTableModule,
     MatExpansionModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
   ],
   declarations: [
     ThongtincanhanComponent,
@@ -38,6 +41,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ThongTinDiemComponent,
     ThongTinQthtComponent,
     LichSuDongTienComponent,
+    LayoutComponent
   ]
 })
 export class MyModuleModule { }
