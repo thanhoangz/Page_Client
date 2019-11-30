@@ -96,36 +96,34 @@
                     <p style="color: #000;">Vui lòng điền đầy đủ thông tin, chuyên viên tư vấn của PLC sẽ liên lạc với
                         bạn trong vòng 24h!
                     </p>
-                    <form action="#" method="post">
+                    <div>
+                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" 
+                            placeholder="Họ tên" required [(ngModel)] = "FirstName">
+                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
+                            placeholder="Tên" required [(ngModel)] = "LastName">
+
+                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" placeholder="Email" [(ngModel)] = "Email">
+                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
+                            placeholder="Số điện thoại" [(ngModel)] = "Phone">
+
                         <input style="font-family: 'Times New Roman', Times, serif;" type="text"
-                            placeholder="Họ tên học viên" required>
+                            placeholder="Họ tên phụ huynh" required [(ngModel)] = "ParentFullName">
                         <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
-                            placeholder="Ngày sinh">
-
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" placeholder="Email">
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
-                            placeholder="Số điện thoại">
-
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text"
-                            placeholder="Họ tên phụ huynh" required>
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
-                            placeholder="Số điện thoại phụ huynh">
-
-
-
+                            placeholder="Số điện thoại phụ huynh" [(ngModel)] = "ParentPhone">
 
                         <textarea style="font-family: 'Times New Roman', Times, serif; width: 99%;"
-                            placeholder="Địa chỉ" name="message"></textarea>
+                            placeholder="Địa chỉ" name="message" [(ngModel)] = "Address"></textarea>
                         <label
                             style="font-family: 'Times New Roman', Times, serif; font-size: 1.25em; font-weight: normal;"
                             for="sel1">Khóa học bạn quan tâm:</label>
-                        <select class="form-control" id="sel1">
+                        <select class="form-control" id="sel1" [(ngModel)] = "Note">
                             <option>Tiếng anh giao tiếp</option>
                             <option>IELTS</option>
                             <option>TOIEC</option>
                         </select>
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="submit" value="Đăng ký">
-                    </form>
+                        <input style="font-family: 'Times New Roman', Times, serif;" type="button" value="Đăng ký"
+                            (click)="dangki()">
+                    </div>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -175,7 +173,8 @@
 
                     <div class="ftr-address">
                         <div class="local">
-                            <span style="font-size:24px;color: #fff; margin-left: 6px;"  class="fa fa-facebook-square" aria-hidden="true"></span>
+                            <span style="font-size:24px;color: #fff; margin-left: 6px;" class="fa fa-facebook-square"
+                                aria-hidden="true"></span>
                         </div>
                         <div class="ftr-text">
                             <p><a href="https://www.facebook.com/TrungtamngoainguPLC/">https://www.facebook.com/TrungtamngoainguPLC/
