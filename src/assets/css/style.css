@@ -1423,6 +1423,18 @@ h3.typo1 {
     border-radius: 2px;
     font-family: 'Marvel', sans-serif;
 }
+.contact-block-left input[type="button"] {
+    background:#a2b040;
+    color: #fff;
+    font-size: 1.25em;
+    width: 30%;
+    margin-top: 0.4em;
+    border: none;
+    padding:0.5em 0.8em;
+    outline: none;
+    border-radius: 2px;
+    font-family: 'Marvel', sans-serif;
+}
 .contact-block-left input[type="checkbox"] {
  
     border-color: #a2b040;
