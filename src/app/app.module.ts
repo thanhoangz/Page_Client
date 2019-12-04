@@ -27,6 +27,7 @@ import { LayoutComponent } from './content/layout/layout.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DetailsComponent } from './layout/details/details.component';
 
+import { CourseComponent } from './course/course.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { DetailsComponent } from './layout/details/details.component';
     InforManagerComponent,
     ContactComponent,
     LayoutComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,

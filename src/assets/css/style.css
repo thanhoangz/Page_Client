@@ -413,7 +413,7 @@ span.glyphicon.glyphicon-triangle-right {
 /*--watch video end here--*/
 /*--events start here--*/
 .events {
-    padding: 5em 0em;
+    padding: 2em 0em;
 }
 .event-month h3 {
     font-size: 4em;
@@ -436,7 +436,7 @@ span.glyphicon.glyphicon-triangle-right {
     margin-top: 0.5em;
 }
 .events-top h3 {
-    font-size: 3em;
+    font-size: 2.5em;
     color:#f2af00;
     margin-bottom: 1em;
     font-family: 'Marvel', sans-serif;
@@ -1412,6 +1412,18 @@ h3.typo1 {
     font-family: 'Marvel', sans-serif;
 }
 .contact-block-left input[type="submit"] {
+    background:#a2b040;
+    color: #fff;
+    font-size: 1.25em;
+    width: 30%;
+    margin-top: 0.4em;
+    border: none;
+    padding:0.5em 0.8em;
+    outline: none;
+    border-radius: 2px;
+    font-family: 'Marvel', sans-serif;
+}
+.contact-block-left input[type="button"] {
     background:#a2b040;
     color: #fff;
     font-size: 1.25em;

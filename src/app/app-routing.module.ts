@@ -9,6 +9,7 @@ import { ThongTinQthtComponent } from './content/thong-tin-qtht/thong-tin-qtht.c
 import { LichSuDongTienComponent } from './content/lich-su-dong-tien/lich-su-dong-tien.component';
 import { InforManagerComponent } from './infor-manager/infor-manager.component';
 import { ContactComponent } from './contact/contact.component';
+import { CourseComponent } from './course/course.component';
 import { LayoutComponent } from './content/layout/layout.component';
 
 
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'course',
+    component: CourseComponent
   },
   {
     path: 'layout',

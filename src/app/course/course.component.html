@@ -66,70 +66,112 @@
     <div class="container">
         <div class="contact-main">
             <div class="contact-top">
-                <h2 style="font-family: Arial, Helvetica, sans-serif;">Liên hệ</h2>
-                <p>Trung tâm ngoại ngữ PLC, hãy liên hệ ngay cho chúng tôi để được tư vấn và giải đáp mọi thắc mắc</p>
+                <h2 style="font-family: Arial, Helvetica, sans-serif;">Khóa học</h2>
+                <p>Các khóa học tại trung tâm ngoại ngữ PLC đều được giảng dạy một cách bài bản chuyên nghiệp bởi những
+                    giáo viên trong và ngoài nước có trình độ chuyên môn</p>
             </div>
-            <div class="contact-block1">
-                <div class="col-md-5 contact-address">
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">Thông tin liên hệ</h3>
-                    <ul>
-                        <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> </span>
-                            <p>Số 97 lô 7C Lê Hồng Phong, Ngô Quyền, Hải Phòng</p>
-                        </li>
-                        <li><span class="glyphicon glyphicon-phone" aria-hidden="true"> </span>
-                            <p>(+84) 0834 862 522</p>
-                        </li>
-                        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
-                            <p><a href="mailto:info@example.com">plc.english.vn@gmail.com
-                                </a></p>
-                        </li>
-                        <li><span style="font-size:36px;color: #000;" class="fa fa-facebook-square" aria-hidden="true">
-                            </span>
-                            <p style="margin-left: 20px;"><a
-                                    href="https://www.facebook.com/TrungtamngoainguPLC/">https://www.facebook.com/TrungtamngoainguPLC/
-                                </a></p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-7 contact-block-left">
-                    <h3 style="font-family: Arial, Helvetica, sans-serif;">Đăng ký tư vấn học</h3>
-                    <p style="color: #000;">Vui lòng điền đầy đủ thông tin, chuyên viên tư vấn của PLC sẽ liên lạc với
-                        bạn trong vòng 24h!
-                    </p>
-                    <div>
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" 
-                            placeholder="Họ tên" required [(ngModel)] = "FirstName">
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
-                            placeholder="Tên" required [(ngModel)] = "LastName">
+            <!--event start here-->
+            <div class="events">
+                <div class="container">
+                    <div class="events-main">
+                        <div class="events-top">
+                            <h3 style="font-family: Arial, Helvetica, sans-serif;">Các khóa học</h3>
+                        </div>
+                        <div class="events-grid">
+                            <div class="col-md-3 event-month wthree">
+                                <h3>1</h3>
+                            </div>
+                            <div class="col-md-5 event-text">
+                                <h4>Tiếng anh giao tiếp cơ bản</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.</p>
+                                <a href="single.html">Read More</a>
+                                <p> </p>
+                            </div>
+                            <div class="col-md-4 event-img">
+                                <div class="item item-type-move">
+                                    <a class="item-hover" href="single.html">
+                                        <div class="item-info">
+                                            <div class="headline">
+                                                Learning
+                                                <div class="line"> </div>
+                                            </div>
+                                            <div class="date">Lorem ipsum dolor</div>
+                                        </div>
+                                        <div class="mask"> </div>
+                                    </a>
+                                    <div class="item-img">
+                                        <img src="../../assets/images/e1.jpg" class="img-responsive" alt="">
+                                    </div>
+                                </div>
 
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" placeholder="Email" [(ngModel)] = "Email">
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
-                            placeholder="Số điện thoại" [(ngModel)] = "Phone">
-
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text"
-                            placeholder="Họ tên phụ huynh" required [(ngModel)] = "ParentFullName">
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="text" class="email"
-                            placeholder="Số điện thoại phụ huynh" [(ngModel)] = "ParentPhone">
-
-                        <textarea style="font-family: 'Times New Roman', Times, serif; width: 99%;"
-                            placeholder="Địa chỉ" name="message" [(ngModel)] = "Address"></textarea>
-                        <label
-                            style="font-family: 'Times New Roman', Times, serif; font-size: 1.25em; font-weight: normal;"
-                            for="sel1">Khóa học bạn quan tâm:</label>
-                        <select class="form-control" id="sel1" [(ngModel)] = "Note">
-                            <option>Tiếng anh giao tiếp</option>
-                            <option>IELTS</option>
-                            <option>TOIEC</option>
-                        </select>
-                        <input style="font-family: 'Times New Roman', Times, serif;" type="button" value="Đăng ký"
-                            (click)="dangki()">
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="events-grid">
+                            <div class="col-md-3 event-month wthree">
+                                <h3>2</h3>
+                            </div>
+                            <div class="col-md-5 event-text">
+                                <h4>Luyện ôn thi IELTS</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.</p>
+                                <a href="single.html">Read More</a>
+                                <p> </p>
+                            </div>
+                            <div class="col-md-4 event-img">
+                                <div class="item item-type-move">
+                                    <a class="item-hover" href="single.html">
+                                        <div class="item-info">
+                                            <div class="headline">
+                                                Learning
+                                                <div class="line"> </div>
+                                            </div>
+                                            <div class="date">Lorem ipsum dolor</div>
+                                        </div>
+                                        <div class="mask"> </div>
+                                    </a>
+                                    <div class="item-img">
+                                        <img src="../../assets/images/e2.jpg" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="events-grid">
+                            <div class="col-md-3 event-month wthree">
+                                <h3>3</h3>
+                            </div>
+                            <div class="col-md-5 event-text">
+                                <h4>Luyện ôn thi TOEIC</h4>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.</p>
+                                <a href="single.html">Read More</a>
+                                <p> </p>
+                            </div>
+                            <div class="col-md-4 event-img">
+                                <div class="item item-type-move">
+                                    <a class="item-hover" href="single.html">
+                                        <div class="item-info">
+                                            <div class="headline">
+                                                Learning
+                                                <div class="line"> </div>
+                                            </div>
+                                            <div class="date">Lorem ipsum dolor</div>
+                                        </div>
+                                        <div class="mask"> </div>
+                                    </a>
+                                    <div class="item-img">
+                                        <img src="../../assets/images/e3.jpg" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
                     </div>
                 </div>
-                <div class="clearfix"> </div>
             </div>
-            <div class="contact-map">
-                <iframe src="https://her.is/37NpDfK" allowfullscreen></iframe>
-            </div>
+            <!--event end here-->
         </div>
     </div>
 </div>
