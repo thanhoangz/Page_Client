@@ -33,6 +33,7 @@ export class LichSuDongTienComponent implements OnInit {
     });
   }
 
+  /*
   // chi tiết đóng họ
   public getReceiptDetailsByReceiptId(id) {
     this.servicesService.getReceiptsDetailById(id).subscribe((result: any) => {
@@ -44,4 +45,5 @@ export class LichSuDongTienComponent implements OnInit {
   public loadTablesReceiptsDetail(data3: any) {
     this.dataSourceReceiptsDetail = new MatTableDataSource(data3);
   }
+  */
 }
