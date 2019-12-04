@@ -23,12 +23,12 @@ export class LoginComponent implements OnInit {
 
   public login() {
     this.servicesService.login(this.username, this.password).subscribe(result => {
-      if (result !== '') {
+      // tslint:disable-next-line: triple-equals
+      if (result != '') {
         console.log(result);
         this.createExchangeId(this.username);  // truyền
         this.router.navigateByUrl('layout');
       } else {
-        console.log('đăng nhập không thành công');
       }
     }
       , error => { });
@@ -38,4 +38,5 @@ export class LoginComponent implements OnInit {
    createExchangeId(id) {
     this.exchangeDataService.changeId(id);
   }
+
 }

@@ -29,16 +29,11 @@ export class ServicesService {
       .post(`${environment.PLCServicesDomain}/api/Learners/get-score-by-learner?id=${id}`, null);
   }
 
-  // tìm kiếm all chi tiết  của phiếu thu
-  getReceiptsDetailById(receiptId) {
-    return this.httpClient
-      .post(`${environment.PLCServicesDomain}/api/ReceiptDetails/get-all-with-conditions?receiptId=${receiptId}`, null);
-  }
 
   // tìm kiếm all phiếu thu của học viên X
   getReceiptsByLearnerId(learnerId) {
     return this.httpClient
-      .post(`${environment.PLCServicesDomain}/api/Receipts/get-all-with-conditions?learnerId=${learnerId}`, null);
+    .post(`${environment.PLCServicesDomain}/api/Receipts/get-all-with-learnerId?learnerId=${learnerId}`, null);
   }
 
   // login

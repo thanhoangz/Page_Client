@@ -16,9 +16,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutComponent } from './layout/layout.component';
-
-
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { DetailsComponent } from 'src/app/layout/details/details.component';
 
 @NgModule({
   imports: [
@@ -34,6 +33,7 @@ import { LayoutComponent } from './layout/layout.component';
     MatExpansionModule,
     MatButtonModule,
     HttpClientModule,
+    MatDialogModule,
   ],
   declarations: [
     ThongtincanhanComponent,
@@ -41,7 +41,8 @@ import { LayoutComponent } from './layout/layout.component';
     ThongTinDiemComponent,
     ThongTinQthtComponent,
     LichSuDongTienComponent,
-    LayoutComponent
+    LayoutComponent,
+    DetailsComponent,
   ]
 })
 export class MyModuleModule { }

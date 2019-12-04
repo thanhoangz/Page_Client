@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesService } from '../services.service';
+// import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -20,6 +21,7 @@ export class ContactComponent implements OnInit {
   public Note = '';
   constructor(
     private servicesService: ServicesService,
+ //   private ToastrServices: ToastrService,
   ) { }
 
   ngOnInit() {
@@ -36,6 +38,16 @@ export class ContactComponent implements OnInit {
       parentPhone: this.ParentPhone,
       note: this.Note,
     }).subscribe(result => {
+     // this.ToastrServices.success('Đăng ký thành công');
+     alert('Đăng ký thành công');
+     this.FirstName = '';
+     this.LastName = '';
+     this.Email = '';
+     this.Address = '';
+     this.Phone = '';
+     this.ParentFullName = '';
+     this.ParentPhone = '';
+     this.Note = '';
     }, error => {
     });
   }

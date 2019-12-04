@@ -24,6 +24,9 @@ import { InforManagerComponent } from './infor-manager/infor-manager.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutComponent } from './content/layout/layout.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DetailsComponent } from './layout/details/details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,7 @@ import { LayoutComponent } from './content/layout/layout.component';
     LichSuDongTienComponent,
     InforManagerComponent,
     ContactComponent,
-    LayoutComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,11 +54,12 @@ import { LayoutComponent } from './content/layout/layout.component';
     ToastrModule,
     MatTableModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [
-    AppComponent
+    AppComponent,
   ]
 
 })
